@@ -1,0 +1,24 @@
+# Commandes Git pour initialiser et pousser le repo
+
+# 1. Se placer dans le dossier
+cd C:\Users\user0\.gemini\antigravity\scratch\RAG_Sources_For_Github
+
+# 2. Initialiser le dépôt Git
+git init
+
+# 3. Ajouter tous les fichiers
+git add .
+
+# 4. Premier commit
+git commit -m "Initial commit: RAG Knowledge Base Scripts v1.0"
+
+# 5. Créer le repo sur GitHub (via interface web ou CLI)
+# Puis lier le repo distant (remplacer USERNAME et REPO_NAME)
+git remote add origin https://github.com/USERNAME/REPO_NAME.git
+
+# 6. Pousser vers GitHub
+git branch -M main
+git push -u origin main
+
+# Alternative avec GitHub CLI (si installé)
+# gh repo create rag-knowledge-base --public --source=. --remote=origin --push
