@@ -24,6 +24,7 @@ Créer une base de connaissances locale complète couvrant :
 
 ### Scripts d'Indexation
 - `so_indexer.py` - Conversion dump Stack Overflow vers SQLite
+- `create_so_indexes.py` - Création des index SQL pour optimiser les recherches
 
 ### Moteur RAG
 - `rag_engine.py` - Moteur de recherche hybride
@@ -62,6 +63,9 @@ python db_downloader.py
 
 # Indexer Stack Overflow
 python so_indexer.py
+
+# Optimiser les recherches (créer les index SQL)
+python create_so_indexes.py
 
 # Lancer l'API RAG
 python rag_api.py
